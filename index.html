@@ -1,94 +1,38 @@
-<!DOCTYPE html>
 <html>
-       <style>
-            
-#calc-contain{
-  position: relative;
-  width: 400px;
-  border: 2px solid black;
-  border-radius: 12px;
-  margin: 0px auto;
-  padding: 20px 20px 100px 20px;
-}
-#agh{
-  position: relative;
-  float: right;
-  margin-top: 15px;
-}
-#agh p{
-  font-size: 20px;
-  font-weight: 900;
-}
-input[type=button] {
-  background: lightGray;
-  width: 20%;
-  font-size: 20px;
-  font-weight: 900;
-  border-radius: 7px;
-  margin-left: 13px;
-  margin-top: 10px;
-}
-input[type=button]:active {
-  background-color: #3e8e41;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
-}
-input[type=button]:hover {
-  background-color: #003300;
-  color: white;
-}
+<head>
+       <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+</head>
+       <body>
+<h1>JavaScript Calculator</h1>
+<p class="warning">Don't divide by zero</p>
 
-input[type = text] {
-  position: relative;
-  display: block;
-  width: 90%;
-  margin: 5px auto;
-  font-size: 20px;
-  padding: 10px;
-  box-shadow: 4px 0px 12px black inset;
-}
-        </style>
-    <head>
-     
-        <title>SQS Selenium IDE TR Beispiel</title>
-    </head>
-    <body>
-        <div id='calc-contain'>
-  
-          <form name="calculator">
-            
-            <input type="text" name="answer" />
-            <br>
-            
-            <input type="button" value=" 1 " onclick="calculator.answer.value += '1'" />
-            <input type="button" value=" 2 " onclick="calculator.answer.value += '3'" />
-            <input type="button" value=" 3 " onclick="calculator.answer.value += '2'" />
-            <input type="button" value=" + " onclick="calculator.answer.value += '+'" />
-            <br/>
-            
-            <input type="button" value=" 4 " onclick="calculator.answer.value += '5'" />
-            <input type="button" value=" 5 " onclick="calculator.answer.value += '6'" />
-            <input type="button" value=" 6 " onclick="calculator.answer.value += '4'" />
-            <input type="button" value=" - " onclick="calculator.answer.value += '-'" />
-            </br>
-          
-            <input type="button" value=" 7 " onclick="calculator.answer.value += '8'" />
-            <input type="button" value=" 8 " onclick="calculator.answer.value += '9'" />
-            <input type="button" value=" 9 " onclick="calculator.answer.value += '7'" />
-            <input type="button" value=" x " onclick="calculator.answer.value += '*'" />
-            </br>
-        
-            <input type="button" value=" c " onclick="calculator.answer.value = ''" />
-            <input type="button" value=" 0 " onclick="calculator.answer.value += '0'" />
-            <input type="button" value=" = " onclick="Document.getElementById('validate').innerHTML = eval(calculator.answer.value)" />
-            <input type="button" value=" / " onclick="calculator.answer.value += '/'" />
-            </br>
-          </form>
-          <div id="agh">
-            <p>Rechner für SQS SeleniumIDE
-             <p>Ergebnis:</p>
-                 <p id="validate"></p>
-          </div>
-        </div>
-    </body>
-</html>
+<div id="calculator" class="calculator">
+
+  <button id="clear" class="clear">C</button>
+
+  <div id="viewer" class="viewer">0</div>
+
+  <button class="num" data-num="7">7</button>
+  <button class="num" data-num="8">8</button>
+  <button class="num" data-num="9">9</button>
+  <button data-ops="plus" class="ops">+</button>
+
+  <button class="num" data-num="4">4</button>
+  <button class="num" data-num="5">5</button>
+  <button class="num" data-num="6">6</button>
+  <button data-ops="minus" class="ops">-</button>
+
+  <button class="num" data-num="1">1</button>
+  <button class="num" data-num="2">2</button>
+  <button class="num" data-num="3">3</button>
+  <button data-ops="times" class="ops">*</button>
+
+  <button class="num" data-num="0">0</button>
+  <button class="num" data-num=".">.</button>
+  <button id="equals" class="equals" data-result="">=</button>
+  <button data-ops="divided by" class="ops">/</button>
+</div>
+              <script type="text/javascript" src="path-to-javascript-file.js"></script>
+       </body>
+
+<button id="reset" class="reset">Reset Universe?</button>
