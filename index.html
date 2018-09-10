@@ -1,88 +1,23 @@
-						<html>
+<!Dotype html>
+<html>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
 <head>
-	<script>
-		//function that display value
-		function dis(val)
-		{
-			document.getElementById("result").value+=val
-		}
-		
-		//function that evaluates the digit and return result
-		function solve()
-		{
-			let x = document.getElementById("result").value
-			let y = eval(x)
-			document.getElementById("result").value = y
-		}
-		
-		//function that clear the display
-		function clr()
-		{
-			document.getElementById("result").value = ""
-		}
-	</script>
-	<!-- for styling -->
-	<style>
-		.title{
-		margin-bottom: 10px;
-		text-align:center;
-		width: 210px;
-		color:green;
-		border: solid black 2px;
-		}
-
-		input[type="button"]
-		{
-		background-color:green;
-		color: black;
-		border: solid black 2px;
-		width:100%
-		}
-
-		input[type="text"]
-		{
-		background-color:white;
-		border: solid black 2px;
-		width:100%
-		}
-	</style>
+	<title>Homepage für SQS Selenium IDE</title>
+	<form action="index.html">
+    <input type="submit" value="Home" />
+</form>
+	<h1>Homepage</h1>
 </head>
-<!-- create table -->
 <body>
-	<div class = title >GeeksforGeeks Calculator</div>
-	<table border="1">
-		<tr>
-			<td colspan="3"><input type="text" id="result"/></td>
-			<!-- clr() function will call clr to clear all value -->
-			<td><input type="button" value="c" onclick="clr()"/> </td>
-		</tr>
-		<tr>
-			<!-- create button and assign value to each button -->
-			<!-- dis("1") will call function dis to display value -->
-			<td><input type="button" value="1" onclick="dis('1')"/> </td>
-			<td><input type="button" value="2" onclick="dis('2')"/> </td>
-			<td><input type="button" value="3" onclick="dis('3')"/> </td>
-			<td><input type="button" value="/" onclick="dis('/')"/> </td>
-		</tr>
-		<tr>
-			<td><input type="button" value="4" onclick="dis('4')"/> </td>
-			<td><input type="button" value="5" onclick="dis('5')"/> </td>
-			<td><input type="button" value="6" onclick="dis('6')"/> </td>
-			<td><input type="button" value="-" onclick="dis('-')"/> </td>
-		</tr>
-		<tr>
-			<td><input type="button" value="7" onclick="dis('7')"/> </td>
-			<td><input type="button" value="8" onclick="dis('8')"/> </td>
-			<td><input type="button" value="9" onclick="dis('9')"/> </td>
-			<td><input type="button" value="+" onclick="dis('+')"/> </td>
-		</tr>
-		<tr>
-			<td><input type="button" value="." onclick="dis('.')"/> </td>
-			<td><input type="button" value="0" onclick="dis('0')"/> </td>
-			<!-- solve function call function solve to evaluate value -->
-			<td><input type="button" value="=" onclick="solve()"/> </td>
-			<td><input type="button" value="*" onclick="dis('+')"/> </td>
-		</tr>
-	</table>
+	<a href="katzen.html">
+		<img src="katzen.jpg" style="height:96;width:126" href="Katzen.html"></img>
+	</a>
+	<a href="schimpansen.html">
+		<img src="schimpansen.jpg" style="height:96;width:126"></img>
+	</a>
+	<a href="Hunde.html">
+		<img src="Hund.jpg" style="height:96;widtg:126"></img>
+		</a>
 </body>
-</html>					
+</html>
